@@ -28,21 +28,22 @@ public class GetZeroArray {
 	private boolean getMaxArr(int[] arr) {				//从最长子数组开始找  最长和为零的子数组，找到就break
 		boolean flag = false;
 		a:
-		for(int i = arr.length; i > 1; i--){              			
+		for(int i = arr.length - 1; i > 1; i--){              			
 			for(int k = 0; k < arr.length-i+1;k++){
 				int sum = 0;
 				for(int j = k ; j < i + k; j++){
 					sum += arr[j];					
 				}
-				System.out.println(sum);
-				if(sum == 0){
+				//System.out.println(sum);
+				//if(sum == 0){
 					flag = true;
 					System.out.println("最长的和为零的连续子数组为：");
 					for(int m = k;m < i; m++){
-						System.out.print(arr[m]+",");
+						System.out.print(arr[m]+" ");
 					}
-					break a;
-				}	
+					System.out.println();
+					//break a;
+				//}
 			}			
 		}
 		return flag;
@@ -59,6 +60,6 @@ public class GetZeroArray {
 		for(int i = 0 ; i < n;i ++){
 			arr[i] = sc.nextInt();
 		}
-		if(!main.getMaxArr(arr)) System.out.println("并没有最长的和为零的连续子数组~");;
+		if(!main.getMaxArr(arr)) System.out.println("并没有和为零的连续子数组~");;
 	}	
 }

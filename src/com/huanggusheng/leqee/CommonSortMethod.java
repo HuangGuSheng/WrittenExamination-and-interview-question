@@ -30,6 +30,7 @@ public class CommonSortMethod {
 //		System.out.println(list.toString());
 	}
 	
+	
 	/**
 	 * 直接插入排序
 	 */
@@ -70,6 +71,7 @@ public class CommonSortMethod {
 			//System.out.println(list.toString());
 		}
 	
+	
 	/**
 	 * 选择排序
 	 */
@@ -103,10 +105,36 @@ public class CommonSortMethod {
 			}
 			
 		}
-		System.out.println(list.toString());
+		//System.out.println(list.toString());
 	}
 	
-	
-	
+	/**
+	 * 快速排序
+	 */
+	public void quickSort(ArrayList<Integer> list,int low,int high){
+		long t = System.currentTimeMillis();
+		int i = low;
+		int j = high;
+		
+		int temp = list.get(i);
+		while(i < j){
+			while (i < j && temp <= list.get(j)) j--;
+			if(i < j){
+				list.set(i, list.get(j));
+				i++;
+			}
+			
+			while (i < j && temp > list.get(i)) i++;
+			if(i < j){
+				list.set(j, list.get(i));
+				j--;
+			}
+		}
+		
+		list.set(i,temp);
+		if(low < i) quickSort(list, low, i - 1);
+		if(i < high) quickSort(list, j + 1, high);
+		System.out.println(list.toString());
+	}
 	
 }

@@ -40,6 +40,12 @@ public class Test {
 		cs.selectSort(data);
 		System.out.println("selectSort:"+(System.currentTimeMillis()-time4)/1000f+"s");
 		
+        //øÏÀŸ≈≈–Ú≤‚ ‘
+		data = initdata.InitArrayData();
+		long time5 = System.currentTimeMillis();
+		cs.quickSort(data,0,data.size()-1);
+		System.out.println("QuickSort:"+(System.currentTimeMillis()-time5
+				)/1000f+"s");
 	}
 
 }
