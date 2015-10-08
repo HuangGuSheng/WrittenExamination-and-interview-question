@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class StockQuestion {
-
+    
+	//未搞定~~
+	
 	/**
 	 *  在股市的交易日中，人们可以进行股票的买卖，假设在一天中最多可以进行两次买卖
 	 *  （0 <=买卖次数 <= 2），但买卖的规则是一笔成交后进行另一笔（即按照买->

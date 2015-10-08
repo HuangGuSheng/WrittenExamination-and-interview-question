@@ -1,6 +1,7 @@
 package com.huanggusheng.meituan;
 
 import java.util.Arrays;
+import java.util.Scanner;
 /**
  * 题目要求
  * 输入{
@@ -15,7 +16,7 @@ import java.util.Arrays;
  */
 public class Main {
 
-	private static int[] aaa(int[][] arr) {
+	private  int[] aaa(int[][] arr) {
 		// TODO 自动生成的方法存根
 		int[] result = new int[arr.length*arr.length];        //返回结果
 		int j = 0; 
@@ -39,23 +40,28 @@ public class Main {
 		return result;
 	}
 	
-
-	public static void main(String[] args) {
-
-		int n = 4;
-		int m = 1;
-		int [][] arr = new int[n][n];
-		for(int i = 0; i<arr.length;i++){
-			for(int j = 0; j<arr.length;j++){
-				arr[i][j] = m;
-				m++;
+	public int[][] initData(){
+		//int m = 3;
+		//int n = 5;
+		System.out.println("请输入行数和列数：");
+		Scanner sc1 = new Scanner(System.in);
+		int m = sc1.nextInt();
+		int n = sc1.nextInt();
+		int[][] arr = new int[m][n];
+		System.out.println("请输入数组:");
+		Scanner sc2 = new Scanner(System.in);
+		for(int i = 0; i < m; i++){
+			for(int j = 0 ;j <n ; j++){
+				arr[i][j] = sc2.nextInt();
 			}
 		}
-		
-		int[] result = aaa(arr);
-	
-		System.out.println(Arrays.toString(result));
+		return arr;
 	}
 
+	public static void main(String[] args) {
+		Main m = new Main();
+		int[] result = m.aaa(m.initData());
 	
+		System.out.println(Arrays.toString(result));
+	}	
 }
