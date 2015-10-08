@@ -34,17 +34,16 @@ public class GetZeroArray {
 				for(int j = k ; j < i + k; j++){
 					sum += arr[j];					
 				}
-				//System.out.println(sum);
-				//if(sum == 0){
+				if(sum == 0){
 					flag = true;
 					System.out.println("最长的和为零的连续子数组为：");
-					for(int m = k;m < i; m++){
+					for(int m = k;m < k + i; m++){
 						System.out.print(arr[m]+" ");
 					}
-					System.out.println();
-					//break a;
-				//}
-			}			
+					System.out.println();					
+				}
+			}
+			break a;
 		}
 		return flag;
 	}
