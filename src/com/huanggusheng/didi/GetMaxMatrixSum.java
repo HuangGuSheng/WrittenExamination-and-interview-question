@@ -18,12 +18,12 @@ public class GetMaxMatrixSum {
 	 * @param args
 	 */
 	public int[][] initData(){
-		int m = 3;
-		int n = 5;
-		System.out.println("请输入m和n:");
+		//int m = 3;
+		//int n = 5;
+		System.out.println("请输入行数和列数：");
 		Scanner sc1 = new Scanner(System.in);
-		m = sc1.nextInt();
-		n = sc1.nextInt();
+		int m = sc1.nextInt();
+		int n = sc1.nextInt();
 		int[][] arr = new int[m][n];
 		System.out.println("请输入数组:");
 		Scanner sc2 = new Scanner(System.in);
