@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class StockQuestion {
     
-	//未搞定~~
+	//不会~~
 	
 	/**
 	 *  在股市的交易日中，人们可以进行股票的买卖，假设在一天中最多可以进行两次买卖

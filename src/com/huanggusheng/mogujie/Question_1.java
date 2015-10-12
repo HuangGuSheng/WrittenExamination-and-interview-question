@@ -40,7 +40,7 @@ public class Question_1 {
 			}
 		}
 		
-		private static boolean detect(String str) {
+		public static boolean detect(String str) {
 		String s = new StringBuffer (str).reverse().toString();
 			
 			if(str.equals(s)){

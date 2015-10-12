@@ -29,7 +29,6 @@ public class Question_2 {
 		//main.getBusCount();
 	}
 
-
 	private void initData() {
 		System.out.println("输入班级数和车最大载客数：");
 		Scanner sc = new Scanner(System.in);
@@ -46,8 +45,6 @@ public class Question_2 {
 	}
 
 	private void getCount(int[] arr2) {
-		// TODO 自动生成的方法存根
-		
+		// TODO 自动生成的方法存根	
 	}
-	
 }
