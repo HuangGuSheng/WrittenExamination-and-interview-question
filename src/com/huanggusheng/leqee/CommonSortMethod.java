@@ -110,6 +110,7 @@ public class CommonSortMethod {
 	
 	/**
 	 * 快速排序
+	 * 没写完，有问题
 	 */
 	public void quickSort(ArrayList<Integer> list,int low,int high){
 		long t = System.currentTimeMillis();
