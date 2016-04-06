@@ -47,7 +47,6 @@ public class GetZeroArray {
 		}
 		return flag;
 	}
-	
 	public static void main(String[] args) {
 		GetZeroArray main = new GetZeroArray();
 		System.out.println("数组长度：");

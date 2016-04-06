@@ -3,7 +3,7 @@ package com.huanggusheng.mogujie;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//没想出来，是属于哪类问题呢~
+//没想出来~
 
 /** 
  * 这个题目也没记~大概意思是学校要组织出去玩，班级数为n，每车最大的载客数为m，
